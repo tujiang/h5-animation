@@ -1,0 +1,862 @@
+/*
+音乐
+ */
+.music{
+    width:0.83rem;
+    height:0.83rem;
+    position:absolute;
+    top:0.2rem;
+    right:0.2rem;
+    z-index:20000;
+    animation:sunrotate 1s linear infinite;
+}
+/*
+箭头
+ */
+body{
+    margin:0;
+    padding:0;
+}
+.container-arrow{
+    position:absolute;
+    bottom:20px;
+    z-index:1000;
+    text-align:center;
+    left:45%;
+}
+.arrow{
+    text-align:center;
+    width:27px;
+    height:15px;
+}
+
+/*
+第一部分
+ */
+.section1{
+    position:absolute;
+    width:4.12rem;
+    height:2.96rem;
+    background:url('../img/photo/af859f729db75768594b9dd9780e2567_690_494.jpg');
+    background-size:100% 100%;
+    top:0.25rem;
+    left:-5.24rem;
+}
+.section2{
+    position:absolute;
+    width:4.12rem;
+    height:2.96rem;
+    background:url('../img/photo/bizhi-1213-87262.jpg');
+    background-size:100% 100%;
+    background-position:-0.5rem 0;
+    top:2.35rem;
+    left:12rem;
+}
+.section{
+    background:url("../img/beijing.png");
+    background-size:100% 100%;
+    width:100%;
+    position:relative;
+}
+.balloon-container{
+    width:100%;
+    position:relative;
+    height:4.78rem;
+}
+.balloon{
+    width:100%;
+    position:absolute;
+    top:-6rem;
+    left:0;
+    right:0;
+    opacity:.5;
+    /*position:absolute;*/
+    /*animation: balloon 5s*/
+}
+.frame-container{
+    /*width:100%;*/
+    position:relative;
+    text-align:center;
+}
+.frame{
+    width:100rem;
+    margin-top:0.1rem;
+    opacity: 0;
+    height:auto;
+
+}
+
+.photo2{
+    top:2.35rem;
+    left:10rem;
+}
+.child{
+    position:absolute;
+    width:2.57rem;
+    height:1.13rem;
+    bottom:-0.5rem;
+    left:0.23rem;
+    opacity: 0;
+}
+.footer{
+    /*position:relative;*/
+    text-align:center;
+    margin-top:0.8rem;
+    /*width:100%;*/
+}
+.wrapText{
+    margin-left:0;
+    width:6.81rem;
+    opacity: 0;
+}
+/*
+第二部分
+ */
+.wrap{
+    position:absolute;
+    z-index:3;
+}
+.tu1,.tu2,.tu3{
+    /*width:0;*/
+    transform: scale(0,0);
+
+}
+.tu1{
+    width:6.82rem;
+    height:4.42rem;
+}
+.tu3,.tu2{
+    width:3.30rem;
+    height:3.03rem;
+}
+.wenzi2{
+    margin-top:9rem;
+    opacity:0;
+    width:6.44rem;
+}
+.qizi{
+    width:7.39rem;
+    opacity: 0;
+    transform: scale(5,5);
+}
+/*
+第三部分
+ */
+#section3{
+    background:url('../img/section3.png');
+    background-size:100% 100%
+}
+.section3-photo-one{
+    position:relative;
+    left:-1.5rem;
+    /*left:-164px;*/
+    top:-0.8rem;
+    opacity: 0
+}
+.beijing1{
+    height:7.85rem;
+    width:7.85rem;
+}
+.tu6{
+    position:absolute;
+   left:0;
+    /*left:10px;*/
+    top:0.02rem;
+    opacity: 0;
+    height:7.72rem;
+}
+.section3-photo-two{
+    position:relative;
+    top:-0.55rem;
+}
+.merrychars{
+    position:absolute;
+    top:50%;
+    /*transform:translateY(-50%);*/
+    right:0.28rem;
+    width:2.74rem;
+    height:3.04rem;
+    /*transform-origin:center center;*/
+}
+img{
+    /*display:block;*/
+}
+.wrap-one{
+    margin-top:0.23rem;
+    margin-left:0.15rem;
+    opacity: 0;
+}
+.wrap-two{
+    position:absolute;
+    bottom:-0.98rem;
+    right:0.39rem;
+    opacity: 0;
+}
+.tu5{
+    position: absolute;
+    top:0.1rem;
+    left:0.12rem;
+    opacity:0;
+    width:3.48rem;
+    height:3.48rem;
+}
+.beijing2{
+    width:3.75rem;
+    height:3.75rem;
+}
+.tu4{
+    position:absolute;
+    top: 0.07rem;
+    left:0.07rem;
+    opacity: 0;
+    width:2.6rem;
+    height:2.6rem;
+}
+.beijing3{
+    width:2.74rem;
+    height:2.74rem;
+}
+@keyframes bounceInLeft {
+    from, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        transform: none;
+    }
+}
+
+.bounceInLeft {
+    animation-name: bounceInLeft;
+}
+
+@keyframes bounceInRight {
+    from, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    from {
+        opacity: 0;
+        transform: translate3d(3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(10px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    to {
+        transform: none;
+    }
+}
+
+.bounceInRight {
+    animation-name: bounceInRight;
+}
+/*
+第四部分
+ */
+#section4{
+   background:url("../img/ditu.png");
+    background-size:100% 100%;
+
+}
+.section4-first-container{
+    width:6.77rem;
+    height:4.15rem;
+    border-radius: 20px;
+    background:#fff;
+    opacity: 0;
+    position:relative;
+    left:-50%;
+    top:0.3rem;
+    transform:translateX(-50%);
+
+}
+.tu8{
+    left:9rem;
+}
+.tu7{
+    left:-7rem;
+}
+.tu7,.tu8{
+    position:absolute;
+    top:0.14rem;
+    width:6.47rem;
+    height:3.85rem;
+}
+.section4-second-container{
+    width:6.77rem;
+    height:4.15rem;
+    border-radius: 20px;
+    background:#fff;
+    opacity: 0;
+    position:relative;
+    left:150%;
+    top:0.3rem;
+    transform:translateX(-50%);
+    margin-top:17px;
+}
+.section4-third-container{
+    width:100%;
+    position:relative;
+    z-index:1200;
+    left:50%;
+    transform:translateX(-50%);
+}
+.animal{
+    width:100%;
+    margin-top:0;
+    opacity:0;
+    position:relative;
+    bottom:-7rem;
+}
+.sun img{
+    width:3.25rem;
+    height:3.06rem;
+}
+.sun{
+    position:absolute;
+    width:3.25rem;
+    height:3.06rem;
+    top:-0.6rem;
+    left:-0.6rem;
+    z-index:1500;
+    transform: rotate(0);
+    animation:sunrotate 1s linear infinite;
+
+}
+@keyframes sunrotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+/*
+第五部分
+ */
+.clear:after{
+    clear:both;
+    content:' ';
+    display:block;
+    width:0;
+    height:0;
+    visibility: hidden;
+}
+.tu9-wrapper{
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    left:50%;
+    top:-1.45rem;
+    transform:translateX(-40%);
+}
+.left{
+    float:left;
+}
+.tu9-wrapper img{
+    display:block;
+}
+.cover{
+    width:2.63rem;
+    height:3.38rem;
+    overflow: hidden;
+    position: absolute;
+    border-radius:0.2rem;
+    left:0.15rem;
+    background: #fff;
+    top:0.15rem;
+}
+.lefta{
+    left:-7rem;
+}
+.righta{
+    right:-7rem;
+}
+.cover-white{
+    width:2.93rem;
+    height:3.68rem;
+    border-radius:0.3rem;
+    background: #fff;
+    position: relative;
+    margin-bottom:0.3rem;
+    display: inline-block;
+}
+.cover-whitea{
+    width:2.93rem;
+    height:2.93rem;
+    border-radius:0.3rem;
+    background: #fff;
+    position: relative;
+    display: inline-block;
+    top:-1.32rem;
+}
+.topa{
+    top:-1rem;
+}
+.topb{
+    top:-1rem;
+}
+.covera{
+    width:2.63rem;
+    height:2.63rem;
+    overflow: hidden;
+    position: absolute;
+    border-radius:0.2rem;
+    left:0.15rem;
+    background: #fff;
+    top:0.15rem;
+}
+.tu10{
+    /*margin-right:0;*/
+    position:absolute;
+    width: 100%;
+    height: auto;
+    /*transform: translateX(-26%);*/
+    border-radius:0.2rem;
+    top:0;
+    left:0;
+    z-index:2;
+    /*clip: rect(0.2rem, 4.5rem, 3.9rem, 1.55rem);*/
+}
+.tu9{
+    /*margin-right:0;*/
+    position:absolute;
+    height: 100%;
+    width: auto;
+    transform: translateX(-26%);
+    border-radius:0.2rem;
+    top:0;
+    left:0;
+    z-index:2;
+    /*clip: rect(0.2rem, 4.5rem, 3.9rem, 1.55rem);*/
+}
+.tu11{
+    /*margin-right:0;*/
+    position:absolute;
+    width: 100%;
+    height: auto;
+    border-radius:0.2rem;
+    top:0;
+    left:0;
+    z-index:2;
+}
+.tu12{
+    position:relative;
+    /*right:-7rem;*/
+    width:2.93rem;
+    height:3.68rem;
+}
+.tu10{
+ /*   position:relative;
+    !*left:-7rem;*!
+    width:2.93rem;
+    height:2.93rem;*/
+}
+.star{
+    width:100%;
+    position:relative;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+    opacity: 0;
+    transform: scale(5,5);
+}
+.text-container{
+    text-align:center;
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+    top:-2.64rem;
+
+}
+.text-container img{
+    vertical-align: middle;
+}
+.text{
+width:5.08rem;
+    /*margin-top:314px;*/
+    /*margin-left:129px;*/
+}
+.childImg{
+    position: relative;
+    top:-1.42rem;
+    left:-7rem;
+    width:1.53rem;
+    height:5.36rem;
+}
+.text{
+    position:relative;
+    right:-7rem;
+}
+.section{
+    overflow:hidden;
+}
+/*
+第六部分
+ */
+.header{
+    width:6.29rem;
+    height:3.69rem;
+
+}
+.header-container{
+    margin-top:0.72rem;
+    text-align:center;
+}
+.beijing1b{
+    width:5.44rem;
+    height:auto;
+    position:relative;
+    left:-7rem;
+}
+.second-container{
+    margin-top:0.92rem;
+}
+.f-wrapper{
+    margin-left:0.48rem;
+    position:relative;
+}
+.tu13{
+    width:5.06rem;
+    height:auto;
+    position:absolute;
+    top:0.12rem;
+    left:0.11rem;
+    opacity:0;
+    transform-origin: right bottom;
+    transform: rotate(18deg);
+}
+.jiaobu1{
+    position:absolute;
+    top:0.7rem;
+    left:-0.3rem;
+    width:1.04rem;
+    opacity:0;
+}
+.twrapper{
+    position:relative;
+    top:-2.8rem;
+    right:-8.7rem;
+}
+.beijing2a{
+    width:4.33rem;
+    height:auto;
+}
+.tu14{
+    width:3.97rem;
+    height:auto;
+    position:absolute;
+    top:0.08rem;
+    left:0.18rem;
+    transform-origin: left bottom;
+    transform: rotate(83deg);
+    opacity:0;
+}
+.jiaobu2{
+    position:absolute;
+    top:0rem;
+    right:3rem;
+    width:0.9rem;
+    opacity:0;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.animatedIn {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 1;
+}
+.tada {
+    animation-name: tada;
+}
+@keyframes tada {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%, 20% {
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%, 50%, 70%, 90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%, 60%, 80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+/*
+第七部分
+ */
+@keyframes rotateInDownLeft {
+    from {
+        transform-origin: left bottom;
+        transform: rotate3d(0, 0, 1, -45deg);
+        opacity: 0;
+    }
+
+    to {
+        transform-origin: left bottom;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.rotateInDownLeft {
+    animation-name: rotateInDownLeft;
+    opacity: 1;
+}
+
+@keyframes rotateInUpRight {
+    from {
+        transform-origin: right bottom;
+        transform: rotate3d(0, 0, 1, -90deg);
+        opacity: 0;
+    }
+
+    to {
+        transform-origin: right bottom;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.rotateInUpRight {
+    animation-name: rotateInUpRight;
+    opacity: 1;
+}
+.balloon-container{
+    width:100%;
+    position:relative;
+    height:4.78rem;
+}
+.balloon1{
+    width:100%;
+    position:absolute;
+    top:-6rem;
+    left:0;
+    right:0;
+    opacity:.5;
+    /*position:absolute;*/
+    /*animation: balloon 5s*/
+}
+.frame-container{
+    /*width:100%;*/
+    position:relative;
+    text-align:center;
+}
+.framea{
+    width:7.05rem;
+    margin-top:0.1rem;
+    opacity: 0;
+    transform:scale(5,5)
+
+}
+.photo1a,.photo2a{
+    position:absolute;
+    display:inline-block;
+    width:4.12rem;
+    height:2.96rem;
+    transform: scale(0,0);
+    /*width:50%;*/
+    /*height:48%;*/
+}
+.photo1a{
+    top:0.25rem;
+    left:0.4rem;
+}
+.photo2a{
+    top:2.35rem;
+    left:2.95rem;
+    transform: scale(0,0);
+}
+.childa{
+    position:absolute;
+    width:2.57rem;
+    height:1.13rem;
+    bottom:-0.5rem;
+    left:0.20rem;
+    opacity:0;
+}
+.footer{
+    /*position:relative;*/
+    text-align:center;
+    margin-top:0.8rem;
+    /*width:100%;*/
+}
+.wrapTexta{
+    margin-left:0.1rem;
+    width:6.81rem;
+    opacity: 0;
+}
+/*
+第八部分
+ */
+
+.wrap{
+    position:absolute;
+    z-index:3;
+}
+.tu1a,.tu2a,.tu3a{
+    /*width:0;*/
+    transform: scale(0,0);
+
+}
+.tu1a{
+    width:6.82rem;
+    height:4.42rem;
+}
+.tu3a,.tu2a{
+    width:3.30rem;
+    height:3.03rem;
+}
+.wenzi2a{
+    margin-top:9rem;
+    opacity:0;
+    width:6.44rem;
+}
+.qizia{
+    width:0;
+}
+
+@keyframes bounceInDown {
+    from, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, 5px, 0);
+    }
+
+    to {
+        transform: none;
+    }
+}
+
+.bounceInDown {
+    animation-name: bounceInDown;
+}
+
+@keyframes bounceInUp {
+    from, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    from {
+        opacity: 0;
+        transform: translate3d(0, 3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(0, -20px, 0);
+    }
+
+    75% {
+        transform: translate3d(0, 10px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, -5px, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.bounceInUp {
+    animation-name: bounceInUp;
+}
+
+@keyframes bounceIn {
+    from, 20%, 40%, 60%, 80%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+        transform: scale3d(.9, .9, .9);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+        transform: scale3d(.97, .97, .97);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.bounceIn {
+    animation-name: bounceIn;
+}
